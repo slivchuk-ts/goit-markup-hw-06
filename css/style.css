@@ -24,7 +24,7 @@ p {
 ul,
 ol {
     list-style-type: none;
-    margin-top: 0;
+    margin: 0;
     padding: 0;
 }
 
@@ -51,7 +51,7 @@ img {
 .header .container{
     display: flex;
     align-items: center;
-    gap: 332px;
+    
 }
 
 .navigation {
@@ -106,6 +106,7 @@ img {
 
 .address{
     font-style: normal;
+    margin-left: auto;
 }
 
 .address-list{
@@ -200,16 +201,15 @@ flex-basis:calc((100% - 3 * 24px) / 4)
     letter-spacing: 0.02em;
     color: #2e2f42;
     margin-bottom: 8px;
-    text-align: center;
-    
-    
-}
+    }
 
 .team{
     background: #f4f4fd;
 }
 .team-item{
     background-color: #FFFFFF;
+    max-width: calc((100% - 3 * 24px) / 4);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .advantages-text,
@@ -218,8 +218,12 @@ flex-basis:calc((100% - 3 * 24px) / 4)
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    text-align: center;
 }
+.team-subtitle,
+.team-text{
+text-align: center;
+}
+
 
 .team-title,
 .portfolio-title{
@@ -237,12 +241,6 @@ flex-basis:calc((100% - 3 * 24px) / 4)
     gap: 24px;
 }
 
-.team-item{
-    background-color: var(--white);
-    max-width: calc((100% - 3 * 24px) / 4);
-    border-radius: 0px 0px 4px 4px;
-    box-shadow: 0px 2px 1px 0px #2e2f42e0;
-}
 
 .team-item:hover,
 .team-item:focus{
