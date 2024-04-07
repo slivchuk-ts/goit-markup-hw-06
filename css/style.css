@@ -51,7 +51,9 @@ img {
 
 .header{
     background-color: #ffffff;;
-    border-bottom: 1px solid #e7e9fc;;
+    border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 
 .header .container{
@@ -103,6 +105,7 @@ img {
     color: #2e2f42;
     padding: 24px 0px;
     display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-link:hover,
 .header-link:active,
@@ -143,6 +146,7 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #434455;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-link:hover,
@@ -185,6 +189,7 @@ color: #434455;
     height: 56px;
     border: none;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -195,19 +200,16 @@ color: #434455;
 .hero{
 padding: 188px 0px;
 background: #2e2f42;
+margin: 0 auto;
+max-width: 1440px;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+rgba(46, 47, 66, 0.7)),
+url(../images/people-office\ 1.jpg);
 }
 
-.hero-bg{
-    margin: 0 auto;
-    max-width: 1440px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-    rgba(46, 47, 66, 0.7)),
-    url(../images/people-office\ 1.jpg);
-}
-  
 
 
               /* section advantages */
@@ -373,6 +375,7 @@ text-align: center;
 
 .portfolio-img-list{
     width: calc((100% - 2 * 24px) / 3);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 
@@ -436,11 +439,11 @@ margin-bottom: 16px;
 }
 
 .footer-text{
-    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
-    width: 264px;
+    max-width: 264px;
+    
 }
 
 .footer{
@@ -454,6 +457,7 @@ margin-bottom: 16px;
     line-height: 1.5;
     color:white;
     margin-bottom: 16px;
+    letter-spacing: 0.02em;
 }
 
 .footer-icon-list {
@@ -493,5 +497,5 @@ margin-bottom: 16px;
 }
 
 .footer-wrapper{
-    margin-left: 120px;
+    margin-right: 120px;
 }
