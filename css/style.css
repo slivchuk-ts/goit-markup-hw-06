@@ -880,12 +880,14 @@ margin-bottom: 16px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    row-gap: 72px;
+    
     /* display: flex;
     align-items: baseline; */
 }
 
 .footer-wrapper{
-    margin-bottom: 72px;
+    /* margin-bottom: 72px; */
     /* margin-right: 120px; */
 }
 
@@ -894,10 +896,10 @@ margin-bottom: 16px;
     /* margin-right: 80px; */
 }
 
-.footer-content{
+/* .footer-content{
     display: flex;
     align-items: baseline;
-}
+} */
 
 .footer-form-content{
     display: flex;
@@ -913,7 +915,8 @@ margin-bottom: 16px;
     letter-spacing: 0.02em;
     color: #fff;
     margin-bottom:16px;
-    /* text-align: center; */
+    
+    text-align: center;
 }
 
 .footer-form {
@@ -989,39 +992,48 @@ margin-bottom: 16px;
 @media  screen and (min-width:768px) {
     
     .fotter-logo {
+    text-align: left;
     display: inline-block;
     margin-bottom: 16px;
     padding: 0;
     margin-right: 0;
+    align-self: start;
     }
+
  .footer-content {
-     padding: 0 104px;
-     justify-content: flex-start;
-     display: flex;
-     flex-direction: row;
-     flex-wrap: wrap;
-     align-items:baseline;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+    width: 584px;
+    }
     
- }
  .footer-form {
      display: flex;
      flex-direction: row;
      gap: 24px;
  }
 .footer-wrapper{
-    margin-right: 24px;
+    min-width: 264px;
+    min-height: 112px;
+    /* margin-right: 24px; */
 }
 
 .footer-icon-text{
     max-width: 264px;
-    margin-bottom: 16;
+    margin-bottom: 16px;
+    text-align: left;
 }
 .footer-soc-wrapper{
-    margin-right: 0;
-    margin-bottom: 0;
+    min-width: 208px;
+    min-height: 80px;
 }
 .footer-form-text{
+    
     display: inline-block;
+    align-self: start;
+
 }
 
 .footer-form-input{
@@ -1030,6 +1042,7 @@ margin-bottom: 16px;
 
 .footer-form-btn {
  min-width: 165px;
+ margin: 0;
   }
 }
 
@@ -1046,14 +1059,24 @@ margin-bottom: 16px;
     .footer-text {
     max-width: 264px;
     }
-     
+   
     .footer-wrapper{
         margin-right: 120px;
-        margin-bottom: 0;
+        /* margin-bottom: 0; */
     }
-    .footer-form-text{
+
+    .footer-form{
         display: flex;
-        align-items: start;
+        gap: 24px;
+        }
+
+        .footer-icon-text{
+            margin-bottom: 16px;
+        }
+    .footer-form-text{
+        text-align: center;
+        /* display: flex;
+        align-items: start; */
     }
     .footer-soc-wrapper{
         margin-right: 80px;
