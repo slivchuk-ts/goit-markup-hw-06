@@ -438,6 +438,9 @@ gap: 40px;
                 rgba(46, 47, 66, 0.7)),
             url(../images/people-office-tablet-2x.jpg);
 }
+.hero-title{
+    max-width: 320px;
+}
 }
 
 @media  screen and (min-width:1158px) {
@@ -451,6 +454,7 @@ gap: 40px;
         }
     .hero-title{
         margin-bottom: 48px;
+        /* max-width: 368px; */
     }
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2),
@@ -796,11 +800,12 @@ line-height: 1.17;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #4d5ae5;
-display: inline-block;
+display: flex;
 padding: 0;
-margin-left: 86px;
+/* margin-left: 86px; */
 /* margin-left: 90px; */
 margin-bottom: 16px;
+justify-content:center;
 
 
 }
@@ -996,7 +1001,7 @@ margin-bottom: 16px;
     display: inline-block;
     margin-bottom: 16px;
     padding: 0;
-    margin-right: 0;
+    margin-left: 0;
     align-self: start;
     }
 
@@ -1004,11 +1009,16 @@ margin-bottom: 16px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    column-gap: 24px;
+   
     row-gap: 72px;
+    
     width: 584px;
     }
-    
+
+    .footer-icon-list{
+        margin: 0;
+    }
+
  .footer-form {
      display: flex;
      flex-direction: row;
@@ -1026,8 +1036,7 @@ margin-bottom: 16px;
     text-align: left;
 }
 .footer-soc-wrapper{
-    min-width: 208px;
-    min-height: 80px;
+    margin-bottom: 34px;
 }
 .footer-form-text{
     
@@ -1051,6 +1060,8 @@ margin-bottom: 16px;
     padding: 0 15px;
     display: flex;
     flex-wrap: nowrap;
+    margin-left: 0;
+    
     }
 
     .footer{
@@ -1073,14 +1084,16 @@ margin-bottom: 16px;
         .footer-icon-text{
             margin-bottom: 16px;
         }
-    .footer-form-text{
-        text-align: center;
+    .footer-form-content{
+       
+       
         /* display: flex;
         align-items: start; */
     }
     .footer-soc-wrapper{
         margin-right: 80px;
-        margin-bottom: 0;
+        
+        
     }
     .footer-input-box{
         margin-right: 24px;
@@ -1095,9 +1108,7 @@ margin-bottom: 16px;
     .footer-form-input::placeholder {
     color: #ffffff;
    }
-   .footer-form{
-    display: flex;
-   }
+   
    .footer-form-btn{
     min-width: 165px;
     height: 40px;
