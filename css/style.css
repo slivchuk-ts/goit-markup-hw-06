@@ -38,132 +38,125 @@ img {
     display: block;
     max-width: 100%;
 }
+
+
 .container{
     max-width: 320px;
     padding: 0 16px;
     margin: 0 auto;
-    /* max-width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto; */
 }
 
 @media screen and (min-width: 768px) {
-    .container {
-        max-width: 768px;
-    }
+.container {
+ max-width: 768px;
+}
 }
 
 @media screen and (min-width: 1158px) {
-    .container {
-        max-width: 1158px;
-        padding: 0 15px;
-    }
-
-    .section{
-        padding: 120px 0;
-    }
+.container {
+max-width: 1158px;
+padding: 0 15px;
 }
 
 .section{
-    padding: 96px 0;
-    /* padding: 120px 0px; */
+padding: 120px 0;
 }
 
+
+.section{
+padding: 96px 0;
+}
+}
+
+
 .header{
-    background-color: #ffffff;;
-    border-bottom: 1px solid #e7e9fc;
-    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
+background-color: #ffffff;
+border-bottom: 1px solid #e7e9fc;
+box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 
 
 
 .header .container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+display: flex;
+align-items: center;
+justify-content: space-between;
 }
 
 .navigation {
-    display: flex;
-    align-items: center;
+display: flex;
+align-items: center;
 }
 
 .header-menu{
-    display: none;
-    /* gap: 40px;
-    align-items: center; */
+display: none;
 }
 
 
 
 .header-logo{
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #4d5ae5;
-    /* margin-right: 76px; */
-    padding: 17px 0;
+font-family: "Raleway", sans-serif;
+font-weight: 700;
+font-size: 18px;
+line-height: 1.17;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #4d5ae5;
+padding: 17px 0;
 }
 
 .header-logo-studio{
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #2e2f42;
+font-family: "Raleway", sans-serif;
+font-weight: 700;
+font-size: 18px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #2e2f42;
 }
 
 
 
 .header-link{
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    padding: 24px 0px;
-    display: block;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #2e2f42;
+padding: 24px 0px;
+display: block;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .header-link:hover,
 .header-link:active,
 .header-link:focus{
-    color: #404bbf;
+color: #404bbf;
 }
 
 .active {
-    position: relative;
-    color: #404bbf;
+position: relative;
+color: #404bbf;
 }
 
 .active::after {
-    content: '';
-    position: absolute;
-    border-radius: 2px;
-    width: 100%;
-    height: 4px;
-    background-color: #404bbf;
-    right: 0;
-    bottom: -1px;
+content: '';
+position: absolute;
+border-radius: 2px;
+width: 100%;
+height: 4px;
+background-color: #404bbf;
+right: 0;
+bottom: -1px;
 }
 
 .address{
-    font-style: normal;
-    margin-left: auto;
+font-style: normal;
+margin-left: auto;
 }
 
 .address-list{
-    display: none;
-    /* display: flex;
-    gap: 40px;
-     */
+display: none;
 }
 
 .address-link{
@@ -178,102 +171,103 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .address-link:hover,
 .address-link:active,
 .address-link:focus{
-    color: #404bbf;
+color: #404bbf;
 }
 
 
 .open-menu-btn{
-    padding: 0;
-    line-height: 0;
-    background-color: transparent;
-    cursor: pointer;
-    border: none;
-    }
+padding: 0;
+line-height: 0;
+background-color: transparent;
+cursor: pointer;
+border: none;
+}
 
 @media screen and (min-width:768px){
-    .open-menu-btn{
-        display: none;
-    }
-    .header-logo{
-        margin-right: 120px;
-    }
+.open-menu-btn{
+display: none;
+}
+.header-logo{
+margin-right: 120px;
+}
 
-    .header-menu{
-    display: flex;
-    gap: 40px;
-    }
- .header-link {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    padding: 24px 0px;
-    display: block;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
- }
+.header-menu{
+display: flex;
+gap: 40px;
+}
+.header-link {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #2e2f42;
+padding: 24px 0px;
+display: block;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
- .header-link:hover,
- .header-link:active,
- .header-link:focus {
-    color: #404bbf;
- }
- .active {
-    position: relative;
-    color: #404bbf;
- }
-
- .active::after {
-    content: '';
-    position: absolute;
-    border-radius: 2px;
-    width: 100%;
-    height: 4px;
-    background-color: #404bbf;
-    right: 0;
-    bottom: -1px;
- }
- .address {
-    display: block;}
-
- .address-list{
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
- }
+.header-link:hover,
+.header-link:active,
+.header-link:focus {
+color: #404bbf;
+}
  
- .address-link {
-     color: #434455;
-     font-size: 12px;
-     line-height: 1.16;
-     letter-spacing: 0.02em;
-     transition: color cubic-bezier(0.4, 0, 0.2, 1);
- }
+.active {
+position: relative;
+color: #404bbf;
+}
 
- .address-link:hover,
- .address-link:focus {
-     color: #404bbf;
- }
+.active::after {
+content: '';
+position: absolute;
+border-radius: 2px;
+width: 100%;
+height: 4px;
+background-color: #404bbf;
+right: 0;
+bottom: -1px;
+}
+ 
+.address {
+display: block;}
 
+.address-list{
+display: flex;
+flex-direction: column;
+gap: 12px;
+}
+ 
+.address-link {
+color: #434455;
+font-size: 12px;
+line-height: 1.16;
+letter-spacing: 0.02em;
+transition: color cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address-link:hover,
+.address-link:focus {
+color: #404bbf;
+}
 }
 
 @media screen and (min-width:1158px) {
-    .header-logo{
-        margin-right: 76px;
-    }
-     .address-list {
-    flex-direction: row;
-     gap: 40px;
-        }
+.header-logo{
+margin-right: 76px;
+}
+.address-list {
+flex-direction: row;
+gap: 40px;
+}
     
-    .address-link {
-    font-size: 16px;
-    line-height: 1.5;
-        }
-    
+.address-link {
+font-size: 16px;
+line-height: 1.5;}
 }
 
-           /* MOBILE MENU */
+
+/* MOBILE MENU */
+
 .mobile-menu {
     width: 100%;
     height: 100%;
@@ -281,11 +275,11 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     top: 0;
     left: 0;
     background-color: #fcfcfc;
-    opacity: 0;
+    /* opacity: 0;
     visibility: hidden;
-    pointer-events: none;
+    pointer-events: none; */
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu.is-open {
@@ -313,24 +307,24 @@ margin: 0 auto;
 
 
 .mobile-list-item:not(:last-child) {
-    margin-bottom: 40px;
+margin-bottom: 40px;
 }
 
 .mobile-list-link {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11111;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.11111;
+letter-spacing: 0.02em;
+color: #2e2f42;
 }
 
 .mobile-list-link:active,
 .mobile-list-link:focus {
-    color: #404bbf;
+ color: #404bbf;
 }
 
 .mobile-address-item {
-    margin-bottom: 48px;
+margin-bottom: 48px;
 }
 
 .mobile-address-link {
@@ -443,7 +437,15 @@ gap: 40px;
             url(../images/people-office-tablet-2x.jpg);
 }
 .hero-title{
-    max-width: 320px;
+    
+    font-weight: 700;
+        font-size: 56px;
+        line-height: 1.07143;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #fff;
+        max-width: 496px;
+        margin-bottom: 36px;
 }
 }
 
@@ -458,9 +460,7 @@ gap: 40px;
         }
     .hero-title{
         margin-bottom: 48px;
-        font-size: 56px;
-        line-height: 1.07;
-        max-width: 496px;
+        
     }
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2),
@@ -1066,6 +1066,7 @@ margin-bottom: 16px;
 }
 .footer-soc-wrapper{
     margin-right: auto;
+    margin-bottom: 0;
 }
 .footer-form-text{
     
@@ -1081,6 +1082,11 @@ margin-bottom: 16px;
 .footer-form-btn {
  min-width: 165px;
  margin: 0;
+ margin-bottom: 0;
+  }
+
+  .footer-input-box{
+    margin-bottom: 0;
   }
 }
 
@@ -1125,9 +1131,7 @@ margin-bottom: 16px;
         
         
     }
-    .footer-input-box{
-        /* margin-right: 24px;
-    } */
+    
 
     .footer-form-input {
     border-color: #ffffff;
@@ -1146,18 +1150,18 @@ margin-bottom: 16px;
 }
 
                               /* MODAL */
-
- .backdrop{
-    position: fixed;
-    background-color: rgba(46, 47, 66, 0.4);
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+.backdrop {
+position: fixed;
+background-color: rgba(46, 47, 66, 0.4);
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+opacity: 0;
+pointer-events: none;
+visibility: hidden;
+transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
         
 .backdrop .is-open{
     opacity: 1;
@@ -1171,7 +1175,7 @@ margin-bottom: 16px;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 288px;
-    height: 623px;
+    min-height: 623px;
     /* width: 408px;
     min-height: 584px; */
     background-color: #fcfcfc;
@@ -1179,6 +1183,7 @@ margin-bottom: 16px;
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
     border-radius: 4px;
     padding: 72px 24px 24px 24px;
+    overflow-y: auto;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
@@ -1297,40 +1302,40 @@ margin-bottom: 16px;
  }
 
  .checked-box {
-     margin-bottom: 24px;
+    margin-bottom: 24px;
  }
 
  .form-check {
-     color: #8e8f99;
-     font-size: 12px;
-     line-height: 1.17;
-     letter-spacing: 0.04em;
+    color: #8e8f99;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
  }
 
  .form-check a {
-     color: #4d5ae5;
-     font-family: inherit;
-     font-size: 12px;
-     line-height: 1.33;
-     letter-spacing: 0.04em;
-     text-decoration: underline;
+    color: #4d5ae5;
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+    text-decoration: underline;
      /* display: inline-flex; */
      /* margin-left: 4px; */
  }
 
  .checked-icon {
-     display: inline-flex;
-     justify-content: center;
-     align-items: center;
-     width: 16px;
-     height: 16px;
-     border: 1px solid rgba(46, 47, 66, 0.4);
-     border-radius: 2px;
-     margin-right: 8px;
-     fill: transparent;
-     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-         border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    margin-right: 8px;
+    fill: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
  .form-check-input:checked+.form-check .checked-icon {
@@ -1364,28 +1369,28 @@ margin-bottom: 16px;
  }
 
  @media screen and (min-width: 768px) {
-     .modal {
-         width: 408px;
-         height: 584px;
-         padding: 72px 24px 24px 24px;
-         top: 96px;
-         transform: translate(-50%, 0);
-     }
+    .modal {
+    width: 408px;
+    height: 584px;
+    padding: 72px 24px 24px 24px;
+    top: 96px;
+    transform: translate(-50%, 0);
+    }
 
-     .form-check {
-         display: block;
-     }
+    .form-check {
+    display: block;
+    }
 
-     .form-check a {
-         display: inline-block;
-         line-height: 1.33;
-         margin-left: 4px;
-     }
+    .form-check a {
+    display: inline-block;
+    line-height: 1.33;
+    margin-left: 4px;
+    }
  }
 
  @media screen and (min-width: 1158px) {
-     .modal {
-         top: 50%;
-         transform: translate(-50%, -50%);
-     }
+    .modal {
+    top: 50%;
+    transform: translate(-50%, -50%);
     }
+ }
