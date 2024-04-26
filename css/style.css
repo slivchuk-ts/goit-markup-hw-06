@@ -438,6 +438,18 @@ color: #4d5ae5;
     rgba(46, 47, 66, 0.7)),
     url(../images/people-office-tablet.jpg);
     }
+
+    .hero-title {
+    
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07143;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
+    max-width: 496px;
+     margin-bottom: 36px;
+    }
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2),
@@ -448,19 +460,9 @@ color: #4d5ae5;
                 rgba(46, 47, 66, 0.7)),
             url(../images/people-office-tablet-2x.jpg);
 }
-.hero-title{
-    
-    font-weight: 700;
-        font-size: 56px;
-        line-height: 1.07143;
-        letter-spacing: 0.02em;
-        text-align: center;
-        color: #fff;
-        max-width: 496px;
-        margin-bottom: 36px;
-        
 }
-}
+
+
 
 @media  screen and (min-width:1158px) {
     .hero-section {
