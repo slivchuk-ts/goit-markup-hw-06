@@ -275,9 +275,9 @@ line-height: 1.5;}
     top: 0;
     left: 0;
     background-color: #fcfcfc;
-    /* opacity: 0;
+    opacity: 0;
     visibility: hidden;
-    pointer-events: none; */
+    pointer-events: none;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -303,6 +303,10 @@ flex-direction: column;
 justify-content: space-between;
 padding: 72px 24px 40px 16px;
 margin: 0 auto;
+}
+
+.mobile-address{
+    font-style: normal;
 }
 
 
@@ -344,8 +348,17 @@ margin-bottom: 48px;
     color: #4d5ae5;
 }
 
-.footer-icon-list .soc-icon-mobile-menu{
+ .soc-icon-mobile-menu{
+display: flex;
 gap: 40px;
+}
+
+.mobile-color{
+color:#404bbf;
+}
+
+.tel-color{
+color: #4d5ae5;
 }
 
 /* section hero */
@@ -498,13 +511,10 @@ gap: 40px;
     display: flex;
     flex-direction: column;
      gap: 72px;
-/* display: flex;
-gap: 24px; */
+
 }
 
-/* .advantages-item{
-flex-basis:calc((100% - 3 * 24px) / 4)
-} */
+
 
 .advantages-icon{
     display: none;
@@ -516,8 +526,6 @@ flex-basis:calc((100% - 3 * 24px) / 4)
     border:1px solid #8e8f99;
     background-color: #f4f4fd;
     margin-bottom: 8px;
-
-   
 }
 
 .advantages-subtitle{
@@ -571,9 +579,9 @@ flex-basis:calc((100% - 3 * 24px) / 4)
     .advantages-subtitle{
         text-align: start;
     }
-    
-    
 }
+
+
 @media screen and (min-width: 1158px){
     .advantages-list {
     flex-wrap: nowrap;
@@ -830,12 +838,7 @@ color: #4d5ae5;
 display: block;
 text-align: center;
 padding: 0;
-/* margin-left: 86px; */
-/* margin-left: 90px; */
 margin-bottom: 16px;
-
-
-
 }
 
 .footer-logo-studio{
@@ -852,9 +855,7 @@ margin-bottom: 16px;
     letter-spacing: 0.02em;
     color: #f4f4fd;
     max-width: 288px;
-    /* max-width: 264px; */
-    
-}
+    }
 
 
 
@@ -913,26 +914,14 @@ margin-bottom: 16px;
     display: flex;
     flex-direction: column;
     align-items: center;
-  
-    
-    /* display: flex;
-    align-items: baseline; */
+
 }
 
-.footer-wrapper{
-    /* margin-bottom: 72px; */
-    /* margin-right: 120px; */
-}
 
 .footer-soc-wrapper{
     margin-bottom: 72px;
     /* margin-right: 80px; */
 }
-
-/* .footer-content{
-    display: flex;
-    align-items: baseline;
-} */
 
 .footer-form-content{
     display: flex;
@@ -1117,20 +1106,10 @@ margin-bottom: 16px;
         gap: 24px;
         }
 
-        /* .footer-icon-text{
-            margin-bottom: 16px;
-        } */
-    .footer-form-content{
-       
-       
-        /* display: flex;
-        align-items: start; */
-    }
+        
     .footer-soc-wrapper{
         margin-right: 56px;
-        
-        
-    }
+        }
     
 
     .footer-form-input {
